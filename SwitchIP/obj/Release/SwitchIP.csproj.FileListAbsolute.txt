@@ -1,0 +1,8 @@
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\bin\Release\SwitchIP.exe
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\bin\Release\SwitchIP.pdb
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Release\SwitchIP.Properties.Resources.resources
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Release\SwitchIP.SwitchIP.resources
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Release\SwitchIP.csproj.GenerateResource.cache
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Release\SwitchIP.csproj.CoreCompileInputs.cache
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Release\SwitchIP.exe
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Release\SwitchIP.pdb
