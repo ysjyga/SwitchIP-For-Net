@@ -1,5 +1,6 @@
 D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\bin\Debug\SwitchIP.exe
 D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\bin\Debug\SwitchIP.pdb
+D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Debug\SwitchIP.csprojAssemblyReference.cache
 D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Debug\SwitchIP.Properties.Resources.resources
 D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Debug\SwitchIP.SwitchIP.resources
 D:\AppData\Microsoft Visual Studio\SwitchIP\SwitchIP\obj\Debug\SwitchIP.csproj.GenerateResource.cache

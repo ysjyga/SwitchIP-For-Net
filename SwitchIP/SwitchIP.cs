@@ -428,7 +428,12 @@ namespace SwitchIP
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            string str;
+            string sectionname= null;
+            if (treeView1.SelectedNode != null)
+            {
+                sectionname = treeView1.SelectedNode.Text;
+            }
+            string str=null;
             string txtIP = textBox1.Text;
             string txtSubMark = textBox2.Text;
             string txtGateWay = textBox3.Text;
@@ -440,9 +445,13 @@ namespace SwitchIP
             Boolean Str_return = true;
             string txtIpRadio, txtDnsRadio;
             NetWorkOperation NetWork = new NetWorkOperation();
-
-            str = Interaction.InputBox("请输入方案名称！\n\n如方案名称已存在，则会覆盖以前的方案！", "新方案", "", -1, -1);
-            if (str == "")
+            if (sectionname != null && sectionname!= "当前配置")
+            {
+                str = sectionname;
+            }else if (sectionname == null || sectionname == "当前配置") { 
+                str = Interaction.InputBox("请输入方案名称！\n\n如方案名称已存在，则会覆盖以前的方案！", "新方案", "", -1, -1);
+            }
+            if (str == null || str=="")
             {
                 MessageBox.Show("方案名称不能为空！");
                 return;
@@ -471,7 +480,7 @@ namespace SwitchIP
             if (radioButton4.Checked)
             {
                 txtDnsRadio = "1";
-                Str_return = NetWork.IP_Check(txtIP, txtSubMark, txtGateWay);
+                Str_return = NetWork.Dns_Check(txtDNS1, txtDNS2);
                 if (!Str_return)
                 {
                     return;
@@ -489,6 +498,7 @@ namespace SwitchIP
             treeView1.Nodes.Clear();
             InitTree_FromConfig();
             this.treeView1.ExpandAll();
+            MessageBox.Show("方案【"+str+"】保存成功！");
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -500,6 +510,7 @@ namespace SwitchIP
                 treeView1.SelectedNode.Remove();
                 INIOperation.INIDeleteSection(file, sectionname);
                 treeView1.SelectedNode = null;
+                MessageBox.Show("方案【"+ sectionname+"】删除成功！");
             }
             else
             {
